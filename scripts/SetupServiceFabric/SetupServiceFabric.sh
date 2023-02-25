@@ -148,7 +148,7 @@ ExitIfError $?  "Error@$LINENO: Failed to add Docker GPG key"
 add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 ExitIfError $?  "Error@$LINENO: Failed to setup docker repository"
 
-apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0xB1998361219BD9C9
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B1998361219BD9C9
 apt-add-repository "deb http://repos.azul.com/azure-only/zulu/apt stable main"
 ExitIfError $?  "Error@$LINENO: Failed to add key for zulu repo"
 
